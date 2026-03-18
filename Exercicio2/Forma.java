@@ -2,8 +2,10 @@ package Exercicio2;
 
 class Forma {
     protected String cor;
-    public Forma(String cor) {
+    protected boolean preenchida;
+    public Forma(String cor, boolean preenchida) {
         this.cor = cor;
+        this.preenchida = preenchida;
     }
 }
 
@@ -11,8 +13,8 @@ class Retangulo extends Forma {
     private double largura;
     private double altura;
 
-    public Retangulo(String cor, double largura, double altura) {
-        super(cor);
+    public Retangulo(String cor, boolean preenchida, double largura, double altura) {
+        super(cor, preenchida);
         this.largura = largura;
         this.altura = altura;
     }
@@ -25,8 +27,8 @@ class Retangulo extends Forma {
 class Circulo extends Forma {
     private double raio;
 
-    public Circulo(String cor, double raio) {
-        super(cor);
+    public Circulo(String cor, boolean preenchida, double raio) {
+        super(cor, preenchida);
         this.raio = raio;
     }
 
