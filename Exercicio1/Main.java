@@ -5,6 +5,6 @@ public class Main {
         Gerente gerente1 = new Gerente("João", 5000.00, "Vendas");
         System.out.println("Nome: " + gerente1.nome);
         System.out.println("Salário: " + gerente1.salario);
-        System.out.println("Setor: " + gerente1.setor);
+        System.out.println("Setor: " + gerente1.getSetor());
     }
 }
